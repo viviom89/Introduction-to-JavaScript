@@ -19,7 +19,13 @@ Do the following:
 
    HINT: no function required
 */
+const votingAge = 18;
 
+if (votingAge >= 18) {
+    console.log(true);
+} else {
+  console.log(false);
+};
 
 
 /*
@@ -33,9 +39,15 @@ Do the following:
 
    HINT: no function required
 */
+const firstThing = 3;
+const secondThing = 4;
 
-
-
+if (firstThing === secondThing) {
+  console.log(false);
+} else {
+  const firstThing = 4;
+  console.log(firstThing);
+};
 
 
 /*
@@ -48,9 +60,9 @@ Do the following:
 
    HINT: look up the Number method
 */
+const year = '1999';
 
-
-
+console.log(Number('1999'));
 
 /*
 Task 1d - Multiply
@@ -61,11 +73,12 @@ Do the following:
    3. Multiply a and b and return the answer
 */
 
-function multiply(/*add your code here*/){
-  /*add your code here*/
-}
+function multiply(a, b){
+  
+  return a * b;
+};
 
-
+console.log(multiply(4, 8));
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
