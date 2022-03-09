@@ -161,7 +161,7 @@ function hungryDog(weight, age){
   } else if (age >= 0.58) {
       return weight * 0.04;
   } else {
-      return 'Please enter weight and age.'
+      return 'Please enter the weight and age of your dog.'
   }
 };
 console.log(hungryDog(15, 1));
