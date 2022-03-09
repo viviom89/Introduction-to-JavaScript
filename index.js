@@ -90,10 +90,12 @@ Do the following:
  3. Return the newly calculated age
 */
 
-function dogYears(/*add your code here*/){
-  /*add your code here*/
+function dogYears(humanYears){
+  
+  return humanYears * 7;
 }
 
+console.log(dogYears(32));
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -142,10 +144,27 @@ NOTE 2: This is a great time to check the tests to see what it expects, versus w
         So, on this one test, the weight would be 4 pounds, and the age would be 1 years old. It's expecting your function to return a decimal number of 0.2
 */  
 
-function hungryDog(/*add your code here*/){
-  /*add your code here*/
-}
-
+function hungryDog(weight, age){
+  if (age >= 1 && weight <= 5) {
+      return weight * 0.05;
+  } else if (age >= 1 && weight >= 6 && weight <= 10) {
+      return weight * 0.04;
+  } else if (age >= 1 && weight >= 11 && weight <= 15) {
+      return weight * 0.03;
+  } else if (age >= 1 && weight > 15) {
+      return weight * 0.02;
+//puppies less than a year
+  } else if (age < 1 && age <= 0.33) {
+      return weight * 0.10;
+  } else if (age >= 0.33 && age < 0.58) {
+      return weight * 0.05;
+  } else if (age >= 0.58) {
+      return weight * 0.04;
+  } else {
+      return 'Please enter weight and age.'
+  }
+};
+console.log(hungryDog(15, 1));
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
